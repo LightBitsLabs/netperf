@@ -18,3 +18,6 @@ src/netperf_version.h
 src/netserver
 .project
 .cproject
+autom4te.cache/
+config.h.in~
+
