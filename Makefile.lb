@@ -2,7 +2,7 @@ include $(WORKSPACE_TOP)/common/Makefile.env
 
 all: configure build install checkin
 
-NETPERF_INSTALL_DIR ?= $(shell component-tool localpath --repo=netperf netperf)
+NETPERF_INSTALL_DIR ?= $(shell component-tool localpath --repo=netperf --type=$(BUILDTYPE) netperf)
 
 configure:
 	$(Q)./configure --disable-omni
@@ -18,7 +18,7 @@ install_dir:
 	$(Q)mkdir -p $(NETPERF_INSTALL_DIR)
 
 checkin:
-	$(Q)component-tool checkin -v --repo=netperf netperf
+	$(Q)component-tool checkin -v --repo=netperf --type=$(BUILDTYPE) netperf
 
 clean:
 	$(Q)rm  $(NETPERF_INSTALL_DIR) -rf
