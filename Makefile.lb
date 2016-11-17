@@ -5,6 +5,7 @@ all: configure build install checkin
 NETPERF_INSTALL_DIR ?= $(shell component-tool localpath --repo=netperf --type=$(BUILD_TYPE) netperf)
 
 configure:
+	$(Q) automake --add-missing
 	$(Q)./configure --disable-omni
 
 build:

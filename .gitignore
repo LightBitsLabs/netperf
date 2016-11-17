@@ -20,4 +20,9 @@ src/netserver
 .cproject
 autom4te.cache/
 config.h.in~
-
+Makefile.in
+doc/Makefile.in
+doc/examples/Makefile.in
+src/Makefile.in
+src/missing/Makefile.in
+src/missing/m4/Makefile.in
