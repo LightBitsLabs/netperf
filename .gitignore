@@ -26,3 +26,5 @@ doc/examples/Makefile.in
 src/Makefile.in
 src/missing/Makefile.in
 src/missing/m4/Makefile.in
+aclocal.m4
+configure
